@@ -1,0 +1,37 @@
+/* .nav{
+    background-image: url(../Assets/Hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 40px; */
+}
+body{
+    margin: 0;
+    font-family: ;
+}
+header,section{
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+header{
+    background: url(../Assets/Hero-bg.png);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.Sign-Up-btn{
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+section{
+    
+}
