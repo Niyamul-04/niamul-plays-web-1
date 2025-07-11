@@ -109,11 +109,13 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+ width: 1140px;
+ height: 328px;
   margin: 0 auto;
   gap: 40px;
   flex-wrap: wrap;
 }
+
 
 .action-content {
   flex: 1;
@@ -160,7 +162,7 @@ body, html {
 .action-image {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 30px;
 }
 
 @media (max-width: 768px) {
@@ -171,6 +173,105 @@ body, html {
 
   .action-content, .action-image-wrapper {
     width: 100%;
+  }
+}
+/* Productive Users Section */
+
+.productive-users-section-outer {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #eef2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productive-users-container {
+  background-color: #f7f9fc;
+  border-radius: 20px;
+  padding: 50px 30px;
+  text-align: center;
+  max-width: 1140px;
+  width: 100%;
+  height: 328px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+.data-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.data-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+  flex: 1;
+}
+
+.data-number {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: #6a5eff;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.data-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #606060;
+  text-transform: capitalize;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .productive-users-container {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .data-number {
+    font-size: 3rem;
+  }
+
+  .data-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .productive-users-container {
+    padding: 30px 15px;
+  }
+
+  .data-grid {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .data-number {
+    font-size: 2.5rem;
   }
 }
 
